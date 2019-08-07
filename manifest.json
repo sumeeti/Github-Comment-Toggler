@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Toggle collapsed review comments on github",
+  "description": "This extension will toggle collapsed github PR review comments",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "logo.png",
+   "default_popup": "popup.html"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+O",
+        "mac": "MacCtrl+Shift+O"
+      },
+      "description": "Opens popup.html"
+    }
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
